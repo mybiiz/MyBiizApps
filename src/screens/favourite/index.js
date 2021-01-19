@@ -10,9 +10,7 @@ const Favourite = () => {
                 <Text style={styles.subtitle}>What are you waiting for? Let's book it!</Text>
             </View>
                 <ImageBackground style={styles.image} source={require('../../assets/img/favbg.png')}>
-                <View style={styles.body}>
                     <Item />
-                </View>
                 </ImageBackground>
         </View>
     )
@@ -52,7 +50,4 @@ const styles = StyleSheet.create({
         marginVertical:10,
         opacity:0.8
     },
-    body:{
-        padding:17
-    }
 })

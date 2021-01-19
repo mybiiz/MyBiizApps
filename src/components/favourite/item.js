@@ -5,7 +5,7 @@ const Item = () => {
     return (
         <View style={styles.container}>
             <View>
-                <Image source={require('../../assets/img/2.jpg')} />
+                
             </View>
         </View>
     )
@@ -16,7 +16,7 @@ export default Item
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        height:250,
+        height:150,
         backgroundColor: 'black',
         borderRadius: 10,
 
@@ -29,5 +29,6 @@ const styles = StyleSheet.create({
         shadowRadius: 4.65,
 
         elevation: 6,
-    }
+    },
+
 })
