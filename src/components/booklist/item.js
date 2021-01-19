@@ -1,6 +1,12 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
 
+//source image dapat diganti seperti this.props dan semacamnya.
+//rate yg diubah yg 4.5 saja.
+//price dan jumlah malam diubah terpisah.
+//price akumulasi dari banyaknya malam (price*night)
+//mohon bantuannya :')
+
 const Item = (props) => {
     return (
         <View style={styles.container}>
