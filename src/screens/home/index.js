@@ -22,7 +22,7 @@ const Home = () => {
                             <Menu />
                             <BannerPromo />
                             {/* Area */}
-                            <Text style={styles.text}>Popular Area</Text>
+                            <Text style={styles.text}>Popular Destinations</Text>
                             <View style={styles.carousel}>
                                 <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
                                     <Area imageUri={require('../../assets/img/surabaya.jpg')} name="Surabaya" />

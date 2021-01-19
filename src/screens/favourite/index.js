@@ -1,6 +1,8 @@
 import React from 'react'
-import { StyleSheet, Text, View, ImageBackground } from 'react-native'
+import { StyleSheet, Text, View, ImageBackground,ScrollView } from 'react-native'
 import Item from '../../components/favourite/item'
+
+//Di sini akan menampilkan item favorite yang user pilih dari listing.
 
 const Favourite = () => {
     return (
@@ -9,9 +11,15 @@ const Favourite = () => {
                 <Text style={styles.title}>Favourite</Text>
                 <Text style={styles.subtitle}>What are you waiting for? Let's book it!</Text>
             </View>
-                <ImageBackground style={styles.image} source={require('../../assets/img/favbg.png')}>
-                    <Item />
-                </ImageBackground>
+            <View style={styles.containerImage}>
+                <ImageBackground style={styles.image} source={require('../../assets/img/favbg.png')} />
+            </View>
+            {/* Item */}
+            <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
+                <Item />
+                <Item />
+            </ScrollView>
+            {/* end item */}
         </View>
     )
 }
@@ -42,12 +50,20 @@ const styles = StyleSheet.create({
         fontStyle: 'italic',
         color: '#1c1c1c'
     },
+    containerImage:{
+        height:110,
+    },
     image: {
         flex: 1,
-        height:120,
+        height: 110,
         resizeMode: "cover",
         justifyContent: "center",
-        marginVertical:10,
-        opacity:0.8
+        marginVertical: 10,
+        padding: 17,
     },
+    body: {
+        flex: 1,
+        paddingHorizontal: 17,
+        marginTop:17,
+    }
 })
