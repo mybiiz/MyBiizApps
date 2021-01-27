@@ -2,7 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View, Linking, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
 
-function MenuAcc({ navigation }) {
+const MenuAcc = ({ navigation }) => {
     return (
         <View style={{ paddingTop: 10 }}>
             <TouchableOpacity style={styles.container} onPress={() => { navigation.navigate('Pengaturan') }}>
