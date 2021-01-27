@@ -18,6 +18,7 @@ const Favourite = () => {
             <ScrollView style={styles.body} showsVerticalScrollIndicator={false}>
                 <Item />
                 <Item />
+                <Item />
             </ScrollView>
             {/* end item */}
         </View>

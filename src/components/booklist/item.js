@@ -17,7 +17,8 @@ const Item = (props) => {
                 </View>
             </View>
             <View style={styles.InfoContainer}>
-                <Text style={styles.InfoName}>Home 1</Text>
+                <Text style={styles.InfoName}>Kost Pak Fritz Paradis 134</Text>
+                <Text style={styles.InfoArea}>Surabaya</Text>
                 <Text style={styles.InfoPrice}>Rp 100.000 | 1 night</Text>
             </View>
         </View>
@@ -60,16 +61,20 @@ const styles = StyleSheet.create({
     InfoContainer:{
         height:60,
         paddingLeft:16,
-        paddingVertical:5,
+        paddingTop:3,
     },
     InfoName:{
         fontSize:14,
         color:'#1c1c1c',
         fontWeight:'bold',
-        marginBottom:14
     },
     InfoPrice:{
         fontSize:14,
         color:'#1c1c1c',
-    }
+    },
+    InfoArea:{
+        fontSize:10,
+        color:'#1c1c1c',
+        fontStyle:'italic'
+    },
 })
