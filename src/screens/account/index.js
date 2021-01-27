@@ -1,21 +1,27 @@
 import React from 'react'
-import { ImageBackground, StyleSheet, Text, View, Image } from 'react-native'
+import { ImageBackground, StyleSheet, Text, View, Dimensions } from 'react-native'
+import MenuAcc from '../../components/account/menu';
+import Name from '../../components/account/name';
+import Photo from '../../components/account/photo';
 import TopBar from '../../components/topbar'
-import { TopTab } from '../../components/booklist/index'
 
-const BookList = () => {
+const windowHeight = Dimensions.get('window').height;
+
+const BookList = (props) => {
     return (
         <View style={{ flex: 1 }}>
-                <ImageBackground source={require('../../assets/img/account.jpg')} style={styles.image}>
-                    <TopBar />
-                    <View style={styles.header} />
-                    <View style={styles.photoContainer}>
-                        <Image />
+            <ImageBackground source={require('../../assets/img/account.jpg')} style={styles.image}>
+                <TopBar />
+                <View style={styles.header}/>
+                <View style={styles.body}>
+                    <Photo />
+                    <Name />
+                    <MenuAcc />
+                    <View style={{marginTop: windowHeight*0.18}}>
+                        <Text style={styles.copy}>© MyBiiz 2021</Text>
                     </View>
-                    <View style={styles.body}>
-
-                    </View>
-                </ImageBackground>
+                </View>
+            </ImageBackground>
         </View>
     )
 }
@@ -30,17 +36,7 @@ const styles = StyleSheet.create({
         justifyContent: "center",
     },
     header: {
-        height: 50,
-        paddingHorizontal: 36,
-        justifyContent: 'center',
-    },
-    photoContainer:{
-        width:100,
-        height:100,
-        borderRadius:100,
-        padding:8,
-        alignSelf:'center',
-        backgroundColor:'red'
+        height: 110,
     },
     body: {
         flex: 1,
@@ -49,10 +45,17 @@ const styles = StyleSheet.create({
         borderTopLeftRadius: 30,
         paddingHorizontal: 17,
         paddingTop: 8,
+
     },
     text: {
         fontSize: 32,
         color: 'white',
         fontWeight: '700',
+    },
+    copy:{
+        fontSize:10,
+        color:"#8c8c8c",
+        fontStyle:'italic',
+        alignSelf:'center'
     }
 })
