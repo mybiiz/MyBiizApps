@@ -7,7 +7,7 @@ import TopBar from '../../components/topbar'
 
 const windowHeight = Dimensions.get('window').height;
 
-const BookList = (props) => {
+const BookList = () => {
     return (
         <View style={{ flex: 1 }}>
             <ImageBackground source={require('../../assets/img/account.jpg')} style={styles.image}>
@@ -17,7 +17,7 @@ const BookList = (props) => {
                     <Photo />
                     <Name />
                     <MenuAcc />
-                    <View style={{marginTop: windowHeight*0.18}}>
+                    <View style={{marginTop: windowHeight*0.17}}>
                         <Text style={styles.copy}>© MyBiiz 2021</Text>
                     </View>
                 </View>

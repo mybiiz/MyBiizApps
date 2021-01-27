@@ -7,6 +7,7 @@ import BookList from '../screens/booklist';
 import Favourite from '../screens/favourite';
 import Account from '../screens/account';
 import Splash from '../screens/Splash';
+import Pengaturan from '../screens/setting';
 
 
 const Stack = createStackNavigator();
@@ -28,6 +29,7 @@ const Router = () => {
         <Stack.Navigator initialRouteName='Splash'>
             <Stack.Screen name="Splash" component={Splash} options={{ headerShown: false }} />
             <Stack.Screen name="MainApp" component={MainApp} options={{ headerShown: false }} />
+            <Stack.Screen name="Pengaturan" component={Pengaturan} options={{ headerShown: false }} />
         </Stack.Navigator>
     )
 }
