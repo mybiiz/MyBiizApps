@@ -1,11 +1,15 @@
 import React from 'react'
 import { StyleSheet, Text, View, Linking, TouchableOpacity } from 'react-native'
 import Icon from 'react-native-vector-icons/Ionicons'
+import { useNavigation } from '@react-navigation/native';
 
-const MenuAcc = ({ navigation }) => {
+function MenuAcc() {
+    
+    const navigation = useNavigation();
+
     return (
         <View style={{ paddingTop: 10 }}>
-            <TouchableOpacity style={styles.container} onPress={() => { navigation.navigate('Pengaturan') }}>
+            <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('Setting')}>
                 <Text style={styles.text}>Settings</Text>
                 <Icon name='settings-outline' size={23} style={{ color: '#1c1c1c' }} />
             </TouchableOpacity>

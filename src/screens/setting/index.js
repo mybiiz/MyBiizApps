@@ -1,7 +1,7 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const Pengaturan = () => {
+function Setting(){
     return (
         <View>
             <Text>Setting</Text>
@@ -9,6 +9,6 @@ const Pengaturan = () => {
     )
 }
 
-export default Pengaturan
+export default Setting
 
 const styles = StyleSheet.create({})
