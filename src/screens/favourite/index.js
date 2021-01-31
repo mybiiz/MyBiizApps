@@ -33,7 +33,7 @@ const styles = StyleSheet.create({
         backgroundColor: 'white'
     },
     header: {
-        marginTop: 10,
+        marginTop: 32,
         marginLeft: 17,
         paddingBottom: 5,
         height: 55,

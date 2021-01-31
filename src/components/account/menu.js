@@ -4,7 +4,7 @@ import Icon from 'react-native-vector-icons/Ionicons'
 import { useNavigation } from '@react-navigation/native';
 
 function MenuAcc() {
-    
+
     const navigation = useNavigation();
 
     return (
@@ -13,7 +13,7 @@ function MenuAcc() {
                 <Text style={styles.text}>Settings</Text>
                 <Icon name='settings-outline' size={23} style={{ color: '#1c1c1c' }} />
             </TouchableOpacity>
-            <TouchableOpacity style={styles.container}>
+            <TouchableOpacity style={styles.container} onPress={() => navigation.navigate('VoucherAndReferral')}>
                 <Text style={styles.text}>Voucher & Referral</Text>
                 <Icon name='barcode-outline' size={23} style={{ color: '#1c1c1c' }} />
             </TouchableOpacity>
