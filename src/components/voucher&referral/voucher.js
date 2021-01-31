@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, Image } from 'react-native'
+import { StyleSheet, Text, View, Image,TouchableOpacity } from 'react-native'
 
 const Voucher = () => {
     return (
@@ -15,9 +15,9 @@ const Voucher = () => {
                     </View>
                     <View style={styles.dis}>
                         <Text style={{ color: 'white', fontSize: 18, marginTop:4}}> Discount 10%</Text>
-                        <View style={styles.button}>
+                        <TouchableOpacity style={styles.button}>
                             <Text style={{ color: 'white', fontSize: 12 }}>Use Voucher</Text>
-                        </View>
+                        </TouchableOpacity>
                     </View>
                 </View>
             </View>
@@ -33,8 +33,7 @@ const styles = StyleSheet.create({
         width: 320,
         height: 160,
         borderRadius: 10,
-        // backgroundColor: '#2f2038',
-        backgroundColor:'#9a00c9',
+        backgroundColor: '#2f2038',
         justifyContent: 'center',
         alignItems: 'center'
     },

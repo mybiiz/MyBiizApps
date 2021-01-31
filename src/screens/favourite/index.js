@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
 
     },
     title: {
-        fontSize: 24,
+        fontSize: 26,
         fontWeight: '700',
         color: '#1c1c1c'
     },
