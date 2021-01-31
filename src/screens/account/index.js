@@ -15,7 +15,8 @@ const BookList = () => {
                 <View style={styles.header}/>
                 <View style={styles.body}>
                     <Photo />
-                    <Name />
+                    {/* Nama */}
+                    <Name name="John Smith"/>
                     <MenuAcc />
                     <View style={{marginTop: windowHeight*0.3}}>
                         <Text style={styles.copy}>© MyBiiz 2021</Text>
