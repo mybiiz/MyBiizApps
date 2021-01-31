@@ -9,7 +9,6 @@ const VoucherAndReferral = () => {
         <View style={styles.container}>
             <View style={styles.header}>
                 <Text style={styles.headerText}>Voucher & Referral</Text>
-                <Text></Text>
             </View>
             <Referral />
             <View style={styles.bodyV}>
