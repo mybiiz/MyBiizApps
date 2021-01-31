@@ -17,7 +17,7 @@ const BookList = () => {
                     <Photo />
                     <Name />
                     <MenuAcc />
-                    <View style={{marginTop: windowHeight*0.17}}>
+                    <View style={{marginTop: windowHeight*0.3}}>
                         <Text style={styles.copy}>© MyBiiz 2021</Text>
                     </View>
                 </View>
